@@ -1,0 +1,33 @@
+
+.top{
+	height: 40px;
+	width: 100%;
+	background: black;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 40px;
+
+}
+.wel{
+	float: right;
+	color: white;
+}
+.footer{
+	background: #eee;
+	height:800px;
+}
+.left{
+	width: 300px;
+	float: left;
+	height: 800px;
+	border-right: 1px solid #ccc;
+	background: white;
+}
+.right{
+	float: right;
+	width: 1120px;
+	height: 800px;
+	border-left: 1px solid #ccc;
+	padding: 10px;
+	background: white;
+}

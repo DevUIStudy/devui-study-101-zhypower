@@ -1,0 +1,26 @@
+<section>
+  <d-tabs [(activeTab)]="tab2acticeID">
+    <d-tab
+      *ngFor="let item of tabItems"
+      [disabled]="item.disabled"
+      [id]="item.id"
+    >
+      <ng-template dTabTitle>
+        {{ item.title }}
+      </ng-template>
+      <ng-template dTabContent>
+        <d-search
+	    [placeholder]="'请输入关键字，按enter继续'"
+	    [isKeyupSearch]="true"
+	    (searchFn)="onSearch($event)"
+	  	></d-search>
+
+
+	  	<app-liebiao></app-liebiao>
+
+
+
+      </ng-template>
+    </d-tab>
+  </d-tabs>
+</section>

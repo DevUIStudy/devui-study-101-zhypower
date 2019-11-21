@@ -8,13 +8,15 @@ import { DevUIModule } from 'ng-devui';
 import { SfqComponent } from './sfq/sfq.component';
 import { YoubianComponent } from './youbian/youbian.component';
 import { LiebiaoComponent } from './liebiao/liebiao.component';
+import { ModalsComponent } from './modals/modals.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SfqComponent,
     YoubianComponent,
-    LiebiaoComponent
+    LiebiaoComponent,
+    ModalsComponent
   ],
   imports: [
     BrowserModule,

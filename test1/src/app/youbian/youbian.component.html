@@ -1,26 +1,40 @@
 <section>
-  <d-tabs [(activeTab)]="tab2acticeID">
-    <d-tab
-      *ngFor="let item of tabItems"
-      [disabled]="item.disabled"
-      [id]="item.id"
-    >
-      <ng-template dTabTitle>
-        {{ item.title }}
-      </ng-template>
+  <d-tabs [(activeTab)]="tab22acticeID">
+    <d-tab id="tab1" title="项目成员" tabId="tab1"> 
       <ng-template dTabContent>
         <d-search
-	    [placeholder]="'请输入关键字，按enter继续'"
-	    [isKeyupSearch]="true"
-	    (searchFn)="onSearch($event)"
-	  	></d-search>
+        [placeholder]="'请输入关键字，按enter继续'"
+        [isKeyupSearch]="true"
+        (searchFn)="onSearch($event)"
+        ></d-search>
+        <div class="actions">
+          <span class="icon-add-member">添加成员</span>
+          <span class="icon-qrcode">通过链接邀请</span>
+          <span class="icon-help">角色权限说明</span>
 
-
-	  	<app-liebiao></app-liebiao>
-
-
-
+        </div>
+        <app-liebiao></app-liebiao>
+        <d-pagination
+          [size]="'sm'"
+          [total]="pager.total"
+          [(pageSize)]="pager.pageSize"
+          [(pageIndex)]="pager.pageIndex"
+          [canViewTotal]="true"
+          [canChangePageSize]="true"
+          [canJumpPage]="false"
+          [maxItems]="5"
+          [totalItemText]="'总条数'"
+          [lite]="true"
+        >
+        </d-pagination>
+        <app-modals></app-modals>
       </ng-template>
     </d-tab>
-  </d-tabs>
+
+    <d-tab id="tab2" title="待审核" tabId="tab2"> 
+      <ng-template dTabContent>
+      随便说点啥
+      </ng-template>
+    </d-tab>
+    </d-tabs>
 </section>

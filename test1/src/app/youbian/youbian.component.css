@@ -1,3 +1,13 @@
 d-search {
   width: 280px;
+  float: left;
+}
+.actions{
+	float: right;
+}
+.actions span{
+	margin-right: 10px;
+}
+d-pagination{
+	float: right;
 }

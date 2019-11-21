@@ -1,33 +1,56 @@
-
+*{
+	padding: 0;
+	margin: 0;
+}
 .top{
+	display: flex;
+	flex-direction:row;
 	height: 40px;
 	width: 100%;
 	background: black;
-	padding-left: 30px;
 	padding-right: 30px;
+	padding-left: 30px;
 	line-height: 40px;
 
 }
 .wel{
-	float: right;
+	flex:1;
+	text-align: right;
 	color: white;
+}
+.top .nav{
+	flex:3;
+
+}
+.top .nav ul li{
+	position: absolute;
+	top:-3px;
+	float: left;
+	border-bottom:3px solid #e91a4f;
+	padding: 0px 8px 0px 8px;
+	color: #e91a4f;
+	z-index: 2;
+	font-weight: bold;
+}
+.top .imgs{
+	flex:1;
 }
 .footer{
 	background: #eee;
-	height:800px;
+	height:100vh;
+	z-index: 1;
 }
 .left{
-	width: 300px;
+	width: 20%;
 	float: left;
-	height: 800px;
-	border-right: 1px solid #ccc;
+	height: 100vh;
 	background: white;
 }
 .right{
+	padding: 20px;
 	float: right;
-	width: 1120px;
-	height: 800px;
-	border-left: 1px solid #ccc;
-	padding: 10px;
+	width: 80%;
+	height: 100vh;
+	border: 15px solid #eee;
 	background: white;
 }

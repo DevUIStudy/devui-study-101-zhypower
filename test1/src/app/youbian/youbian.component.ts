@@ -6,23 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./youbian.component.css']
 })
 export class YoubianComponent implements OnInit {
-tab2acticeID = 'tab2';
-  tabItems = [
-    {
-      id: 'tab2',
-      title: '项目成员',
-      content: `Fames ac turpis egestas maecenas pharetra.`
-    },
-    {
-      id: 'tab3',
-      title: '待审核',
-      content: `Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor.`
-    },
-  ];
+  tab22acticeID = 'tab1';
 
   constructor() { }
 
   ngOnInit() {
   }
+  pager = {
+    total: 648,
+    pageIndex: 1,
+    pageSize: 10
+  };
 
 }

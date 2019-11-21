@@ -23,8 +23,8 @@ export class SfqComponent implements OnInit {
     title: '项目管理',
     open: true,
     children: [
-      {title: '项目设置模版', disabled: false},
-      {title: '设置项目创建者', active: true},
+      {title: '项目设置模版', link:'/right'},
+      {title: '设置项目创建者', link:'/mains'},
       {title: '项目和成员管理'},
     ]
   }, {

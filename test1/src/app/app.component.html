@@ -1,6 +1,13 @@
 <div class="container">
 	<div class="top">
-		<img src="../assets/header-logo.svg">
+		<div class="imgs">
+			<img src="../assets/header-logo.svg">
+		</div>
+		<div class="nav">
+			<ul>
+				<li>首页</li>
+			</ul>
+		</div>
 		<div class="wel">欢迎你，xxx</div>
 	</div>
 	<div class="footer">
@@ -8,7 +15,7 @@
 			<app-sfq></app-sfq>
 		</div>
 		<div class="right">
-			<app-youbian></app-youbian>
+			<router-outlet></router-outlet>
 		</div>
 	</div>
 </div>

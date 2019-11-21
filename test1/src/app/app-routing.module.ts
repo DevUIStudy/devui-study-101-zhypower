@@ -4,6 +4,7 @@ import { YoubianComponent } from './youbian/youbian.component';
 import { SfqComponent } from './sfq/sfq.component';
 
 const routes: Routes = [
+{ path: '', redirectTo: '/mains', pathMatch: 'full' },
 	{ path: 'mains', component: YoubianComponent },
 	{ path: 'right', component: SfqComponent }
 ];
